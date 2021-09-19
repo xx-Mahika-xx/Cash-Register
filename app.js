@@ -11,7 +11,7 @@ checkButton.addEventListener("click", function validateBillCash(){
     message.style.display="none";
     if(billAmount.value>0)
     {
-        if(cashGiven.value>=billAmount.value)
+        if(cashGiven.value-billAmount.value>=billAmount.value)
         {
             const amountReturned=cashGiven.value-billAmount.value;
             calculateChange(amountReturned);
